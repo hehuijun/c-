@@ -1,3 +1,6 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
 class M
 {
 public:
@@ -10,7 +13,7 @@ int Add(int x);
 int Add();
 int Xout(){return X;}
 int Yout(){return Y;}
-priavte:
+private:
 int X,Y;
 };
 int M::Add(int x,int y)
@@ -19,7 +22,7 @@ X=x;
 Y=y;
 return X+Y;
 }
-Int M:Add(int x)
+int M::Add(int x)
 {
 X=Y=x;
 return X+Y;
@@ -28,17 +31,16 @@ int M::Add()
 {
 return X+Y;
 }
-#incloude <iostream.h>
-void main()
+
+int main()
 {
 M a(10,20),b(4);
-cout<<"a="<<a.Xout()<<"."<<a.Yout()<<endl;
+cout<<"a="<<a.Xout()<<","<<a.Yout()<<endl;
 
-cout<<"b="<<b.Xout()<<"."<<b.Yout()<<endl;
+cout<<"b="<<b.Xout()<<","<<b.Yout()<<endl;
 int i=a.Add();
 int j=a.Add(3,9);
 int k=b.Add(5);
 
 cout<<i<<endl<<j<<endl<<k<<endl;
 }
-
