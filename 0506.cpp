@@ -30,4 +30,5 @@ int main()
 A m(3,5);
 int i=m.d();
 cout<<"d()return:"<<i<<endl;
+    cout<<"在xcode中集成测试"<<endl;
 }
