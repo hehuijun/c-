@@ -1,5 +1,17 @@
-#include <iostream.h>
-class Shape
+//
+//  例8.18:计算三角形、矩形、圆形、梯形、正方形的面积和
+//  ccc
+//
+//  Created by 何慧君 on 2016/11/23.
+//  Copyright © 2016年 何慧君. All rights reserved.
+//
+
+//
+#include <iostream>
+#include <0818.h>
+using namespace std;
+
+class Shape//类shape是一个抽象类，相当于是triangle等5个类的根，shape类中的虚函数Area（）在其他五个派生类中有着不同的是实现。
 {
 public:
     virtual double Area() const=0;
@@ -79,17 +91,21 @@ MyProgram::~MyProgram()
 {
     for(int i=0;i<5;i++)
         delete s[i];
-    delete[] s;
+    delete[]s;
 }
 double MyProgram::Run()
 {
     double sum=Compute(s,5);
     return sum;
 }
-void main()
+
+void AreaSum()//当前为子程序写法，作为主程序单独运行时应写为int main()
 {
-    cout<<″Area′s sum=″<<MyProgram().Run()<<endl;
+    cout<<"程序说明：计算三角形、矩形、圆形、梯形、正方形的面积和。以下程序开始：\n"<<endl;
+    
+    cout<<"Area's Sum="<<MyProgram().Run()<<endl;
 }
+
 
 
 
