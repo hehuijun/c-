@@ -12,3 +12,4 @@
 #include <stdio.h>
 
 #endif /* _921_hpp */
+void RWfiles();

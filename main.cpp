@@ -37,7 +37,7 @@ using namespace std;
 int main()
 {
     char *n;
-    n="0818-triangle";
+    n="0922";
     
     
     if(0 == strcmp(n, "0306"))
@@ -165,21 +165,21 @@ int main()
     {
         //    char n[]= "0910";
         cout<<"这是主函数，现在开始运行例"<<n<<"程序\n"<<endl;
-        StatisticsNumber();
+        RowStatistics();
         cout<<"\n例"<<n<<"程序结束"<<endl;
     }
     else if(0 == strcmp(n, "0921"))
     {
         //    char n[]= "0921";
         cout<<"这是主函数，现在开始运行例"<<n<<"程序\n"<<endl;
-        StatisticsNumber();
+        RWfiles();
         cout<<"\n例"<<n<<"程序结束"<<endl;
     }
     else if(0 == strcmp(n, "0922"))
     {
         //    char n[]= "0922";
         cout<<"这是主函数，现在开始运行例"<<n<<"程序\n"<<endl;
-        StatisticsNumber();
+        CopyFileContent();
         cout<<"\n例"<<n<<"程序结束"<<endl;
     }
     else {

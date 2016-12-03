@@ -12,3 +12,4 @@
 #include <stdio.h>
 
 #endif /* _922_hpp */
+void CopyFileContent();
